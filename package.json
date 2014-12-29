@@ -1,0 +1,12 @@
+{
+  "name": "nfs",
+  "description": "Node.js File Server",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Jaemin Noh <korsnack@korsnack.kr>",
+  "private": true,
+  "devDependencies": {
+    "mime": "^1.2.11",
+    "swig": "^1.4.2"
+  }
+}

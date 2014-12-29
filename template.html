@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>Index of {{ directory }}</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+<style>
+body{margin:auto;width:960px;font-size:16px;font-family:"Helvetica Neue",Helvetica,Arial,"Apple SD Gothic Neo","나눔바른고딕",NanumBarunGothic,"나눔고딕",NanumGothic,"Apple Gothic","맑은 고딕","Malgun Gothic","돋움",Dotum,sans-serif;color:#111111;}
+a{color:#0074d9;text-decoration:none;}
+a:hover,a:active{text-decoration:underline;}
+th,td{text-align:left;padding:5px 15px;}
+th{font-size:12px;color:#aaaaaa;}
+tr td:nth-child(1){max-width:650px;}
+tr td:nth-child(2),tr td:nth-child(3){font-size:14px;color:#aaaaaa;}
+</style>
+</head>
+<body><h1>Index of {{ directory }}</h1><table><thead><tr><th>FILE NAME</th><th>FILE SIZE</th><th>DATE</th></tr></thead><tbody>
+{% for entry in entries %}
+<tr><td><a href="{{ entry.name }}">{{ entry.name }}</a></td><td>{{ entry.size }}</td><td>{{ entry.date|date("Y-m-d H:i:s") }}</td></tr>
+{% endfor %}
+</tbody></table></body></html>
